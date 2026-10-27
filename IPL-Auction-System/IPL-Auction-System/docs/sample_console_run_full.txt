@@ -1,0 +1,208 @@
+IPL PLAYER AUCTION - console simulation (seed 42)
+Each franchise starts with Rs.100.00 Cr; bid increment Rs.0.5 Cr
+
+Lot   1  Nitish Kumar Reddy     All-Rounder   base 0.50  ->  SOLD to CSK for Rs.3.00 Cr
+Lot   2  Devdutt Padikkal       Batter        base 0.50  ->  SOLD to RCB for Rs.3.00 Cr
+Lot   3  Pat Cummins            Bowler        base 2.00  ->  SOLD to MI for Rs.12.50 Cr
+Lot   4  Harshal Patel          Bowler        base 1.00  ->  SOLD to KKR for Rs.5.50 Cr
+Lot   5  Cameron Green          All-Rounder   base 1.50  ->  SOLD to MI for Rs.7.50 Cr
+Lot   6  Washington Sundar      All-Rounder   base 1.00  ->  SOLD to CSK for Rs.3.00 Cr
+Lot   7  Ayush Badoni           Batter        base 0.50  ->  SOLD to KKR for Rs.0.50 Cr
+Lot   8  Faf du Plessis         Batter        base 1.00  ->  SOLD to CSK for Rs.3.00 Cr
+Lot   9  Dewald Brevis          Batter        base 0.50  ->  SOLD to KKR for Rs.1.00 Cr
+Lot  10  T Natarajan            Bowler        base 0.50  ->  SOLD to KKR for Rs.1.00 Cr
+Lot  11  Dawid Malan            Batter        base 0.50  ->  SOLD to CSK for Rs.1.00 Cr
+Lot  12  Sunil Narine           All-Rounder   base 1.50  ->  SOLD to KKR for Rs.1.50 Cr
+Lot  13  Jake Fraser-McGurk     Batter        base 1.00  ->  SOLD to RCB for Rs.5.00 Cr
+Lot  14  Matheesha Pathirana    Bowler        base 1.00  ->  SOLD to RCB for Rs.4.50 Cr
+Lot  15  Shivam Dube            All-Rounder   base 1.00  ->  SOLD to CSK for Rs.2.50 Cr
+Lot  16  Kuldeep Yadav          Bowler        base 1.50  ->  SOLD to CSK for Rs.8.50 Cr
+Lot  17  Jos Buttler            Wicketkeeper  base 2.00  ->  SOLD to CSK for Rs.5.00 Cr
+Lot  18  Lockie Ferguson        Bowler        base 1.00  ->  SOLD to MI for Rs.1.50 Cr
+Lot  19  Pathum Nissanka        Batter        base 0.50  ->  SOLD to MI for Rs.1.50 Cr
+Lot  20  Varun Chakravarthy     Bowler        base 1.00  ->  SOLD to CSK for Rs.5.00 Cr
+Lot  21  KL Rahul               Wicketkeeper  base 2.00  ->  SOLD to KKR for Rs.6.00 Cr
+Lot  22  Mayank Yadav           Bowler        base 0.50  ->  SOLD to KKR for Rs.2.50 Cr
+Lot  23  Ravindra Jadeja        All-Rounder   base 2.00  ->  SOLD to RCB for Rs.6.00 Cr
+Lot  24  Adam Zampa             Bowler        base 1.00  ->  SOLD to CSK for Rs.1.00 Cr
+Lot  25  Abhishek Sharma        Batter        base 1.00  ->  SOLD to CSK for Rs.5.50 Cr
+Lot  26  Aiden Markram          Batter        base 1.50  ->  SOLD to RCB for Rs.4.50 Cr
+Lot  27  Sam Curran             All-Rounder   base 1.50  ->  SOLD to KKR for Rs.8.00 Cr
+Lot  28  Marcus Stoinis         All-Rounder   base 1.00  ->  SOLD to RCB for Rs.3.50 Cr
+Lot  29  Sanju Samson           Wicketkeeper  base 1.50  ->  SOLD to KKR for Rs.4.50 Cr
+Lot  30  Phil Salt              Wicketkeeper  base 1.50  ->  SOLD to RCB for Rs.1.50 Cr
+Lot  31  Shubman Gill           Batter        base 2.00  ->  SOLD to MI for Rs.2.00 Cr
+Lot  32  Kagiso Rabada          Bowler        base 2.00  ->  SOLD to MI for Rs.2.00 Cr
+Lot  33  Rahmanullah Gurbaz     Wicketkeeper  base 0.50  ->  SOLD to RCB for Rs.0.50 Cr
+Lot  34  Rishabh Pant           Wicketkeeper  base 2.00  ->  UNSOLD
+Lot  35  Trent Boult            Bowler        base 1.50  ->  SOLD to MI for Rs.1.50 Cr
+Lot  36  Rajat Patidar          Batter        base 1.00  ->  SOLD to CSK for Rs.2.00 Cr
+Lot  37  Moeen Ali              All-Rounder   base 0.50  ->  SOLD to MI for Rs.0.50 Cr
+Lot  38  Brandon King           Batter        base 0.50  ->  SOLD to MI for Rs.0.50 Cr
+Lot  39  Mohammed Shami         Bowler        base 1.50  ->  UNSOLD
+Lot  40  Kusal Mendis           Wicketkeeper  base 0.50  ->  UNSOLD
+Lot  41  Mohammed Siraj         Bowler        base 1.50  ->  SOLD to RCB for Rs.1.50 Cr
+Lot  42  Lungi Ngidi            Bowler        base 0.50  ->  SOLD to RCB for Rs.0.50 Cr
+Lot  43  Harshit Rana           Bowler        base 0.50  ->  UNSOLD
+Lot  44  David Warner           Batter        base 1.50  ->  SOLD to RCB for Rs.1.50 Cr
+Lot  45  Jasprit Bumrah         Bowler        base 2.00  ->  UNSOLD
+Lot  46  Rovman Powell          Batter        base 0.50  ->  SOLD to KKR for Rs.0.50 Cr
+Lot  47  Will Jacks             All-Rounder   base 1.00  ->  UNSOLD
+Lot  48  Ravi Bishnoi           Bowler        base 1.00  ->  UNSOLD
+Lot  49  Anrich Nortje          Bowler        base 1.00  ->  UNSOLD
+Lot  50  MS Dhoni               Wicketkeeper  base 1.50  ->  SOLD to MI for Rs.1.50 Cr
+Lot  51  Harry Brook            Batter        base 1.50  ->  UNSOLD
+Lot  52  Shimron Hetmyer        Batter        base 1.00  ->  UNSOLD
+Lot  53  Bhuvneshwar Kumar      Bowler        base 1.00  ->  UNSOLD
+Lot  54  Rachin Ravindra        All-Rounder   base 1.00  ->  UNSOLD
+Lot  55  Tilak Varma            Batter        base 1.00  ->  SOLD to KKR for Rs.1.00 Cr
+Lot  56  Marco Jansen           All-Rounder   base 1.00  ->  UNSOLD
+Lot  57  Ishan Kishan           Wicketkeeper  base 1.50  ->  UNSOLD
+Lot  58  Shreyas Iyer           Batter        base 1.50  ->  SOLD to MI for Rs.1.50 Cr
+
+======================================================================================
+IPL PLAYER AUCTION - FINAL REPORT
+======================================================================================
+Sold: 44 | Unsold: 14 | Not auctioned: 42 | Rounds played: 1
+
+CSK (Chennai Super Kings) - squad 11/11
+  ID   Player                   Role           Country         Price(Cr)
+  088  Nitish Kumar Reddy       All-Rounder    India                3.00
+  055  Washington Sundar        All-Rounder    India                3.00
+  052  Faf du Plessis           Batter         South Africa         3.00
+  025  Dawid Malan              Batter         England              1.00
+  004  Shivam Dube              All-Rounder    India                2.50
+  099  Kuldeep Yadav            Bowler         India                8.50
+  007  Jos Buttler              Wicketkeeper   England              5.00
+  056  Varun Chakravarthy       Bowler         India                5.00
+  090  Adam Zampa               Bowler         Australia            1.00
+  009  Abhishek Sharma          Batter         India                5.50
+  078  Rajat Patidar            Batter         India                2.00
+  Total spent: Rs.39.50 Cr | Remaining purse: Rs.60.50 Cr
+  Composition: BAT 4/4  BOWL 3/3  AR 3/2  WK 1/1  (requirements met)
+
+RCB (Royal Challengers Bengaluru) - squad 11/11
+  ID   Player                   Role           Country         Price(Cr)
+  064  Devdutt Padikkal         Batter         India                3.00
+  061  Jake Fraser-McGurk       Batter         Australia            5.00
+  098  Matheesha Pathirana      Bowler         Sri Lanka            4.50
+  058  Ravindra Jadeja          All-Rounder    India                6.00
+  014  Aiden Markram            Batter         South Africa         4.50
+  093  Marcus Stoinis           All-Rounder    Australia            3.50
+  011  Phil Salt                Wicketkeeper   England              1.50
+  074  Rahmanullah Gurbaz       Wicketkeeper   Afghanistan          0.50
+  043  Mohammed Siraj           Bowler         India                1.50
+  085  Lungi Ngidi              Bowler         South Africa         0.50
+  034  David Warner             Batter         Australia            1.50
+  Total spent: Rs.32.00 Cr | Remaining purse: Rs.68.00 Cr
+  Composition: BAT 4/4  BOWL 3/3  AR 2/2  WK 2/1  (requirements met)
+
+MI (Mumbai Indians) - squad 11/11
+  ID   Player                   Role           Country         Price(Cr)
+  072  Pat Cummins              Bowler         Australia           12.50
+  082  Cameron Green            All-Rounder    Australia            7.50
+  047  Lockie Ferguson          Bowler         New Zealand          1.50
+  046  Pathum Nissanka          Batter         Sri Lanka            1.50
+  005  Shubman Gill             Batter         India                2.00
+  054  Kagiso Rabada            Bowler         South Africa         2.00
+  077  Trent Boult              Bowler         New Zealand          1.50
+  096  Moeen Ali                All-Rounder    England              0.50
+  084  Brandon King             Batter         West Indies          0.50
+  051  MS Dhoni                 Wicketkeeper   India                1.50
+  024  Shreyas Iyer             Batter         India                1.50
+  Total spent: Rs.32.50 Cr | Remaining purse: Rs.67.50 Cr
+  Composition: BAT 4/4  BOWL 4/3  AR 2/2  WK 1/1  (requirements met)
+
+KKR (Kolkata Knight Riders) - squad 11/11
+  ID   Player                   Role           Country         Price(Cr)
+  070  Harshal Patel            Bowler         India                5.50
+  071  Ayush Badoni             Batter         India                0.50
+  013  Dewald Brevis            Batter         South Africa         1.00
+  065  T Natarajan              Bowler         India                1.00
+  042  Sunil Narine             All-Rounder    West Indies          1.50
+  038  KL Rahul                 Wicketkeeper   India                6.00
+  022  Mayank Yadav             Bowler         India                2.50
+  092  Sam Curran               All-Rounder    England              8.00
+  037  Sanju Samson             Wicketkeeper   India                4.50
+  059  Rovman Powell            Batter         West Indies          0.50
+  040  Tilak Varma              Batter         India                1.00
+  Total spent: Rs.32.00 Cr | Remaining purse: Rs.68.00 Cr
+  Composition: BAT 4/4  BOWL 3/3  AR 2/2  WK 2/1  (requirements met)
+
+UNSOLD PLAYERS (14)
+  P075 Rishabh Pant             Wicketkeeper   base Rs.2.00 Cr
+  P079 Mohammed Shami           Bowler         base Rs.1.50 Cr
+  P018 Kusal Mendis             Wicketkeeper   base Rs.0.50 Cr
+  P017 Harshit Rana             Bowler         base Rs.0.50 Cr
+  P063 Jasprit Bumrah           Bowler         base Rs.2.00 Cr
+  P053 Will Jacks               All-Rounder    base Rs.1.00 Cr
+  P068 Ravi Bishnoi             Bowler         base Rs.1.00 Cr
+  P029 Anrich Nortje            Bowler         base Rs.1.00 Cr
+  P044 Harry Brook              Batter         base Rs.1.50 Cr
+  P094 Shimron Hetmyer          Batter         base Rs.1.00 Cr
+  P006 Bhuvneshwar Kumar        Bowler         base Rs.1.00 Cr
+  P057 Rachin Ravindra          All-Rounder    base Rs.1.00 Cr
+  P032 Marco Jansen             All-Rounder    base Rs.1.00 Cr
+  P050 Ishan Kishan             Wicketkeeper   base Rs.1.50 Cr
+
+AUCTION HISTORY
+  Rd  ID    Player                   Role               Base     Final Team   Status 
+  1   P088  Nitish Kumar Reddy       All-Rounder        0.50      3.00 CSK    SOLD   
+  1   P064  Devdutt Padikkal         Batter             0.50      3.00 RCB    SOLD   
+  1   P072  Pat Cummins              Bowler             2.00     12.50 MI     SOLD   
+  1   P070  Harshal Patel            Bowler             1.00      5.50 KKR    SOLD   
+  1   P082  Cameron Green            All-Rounder        1.50      7.50 MI     SOLD   
+  1   P055  Washington Sundar        All-Rounder        1.00      3.00 CSK    SOLD   
+  1   P071  Ayush Badoni             Batter             0.50      0.50 KKR    SOLD   
+  1   P052  Faf du Plessis           Batter             1.00      3.00 CSK    SOLD   
+  1   P013  Dewald Brevis            Batter             0.50      1.00 KKR    SOLD   
+  1   P065  T Natarajan              Bowler             0.50      1.00 KKR    SOLD   
+  1   P025  Dawid Malan              Batter             0.50      1.00 CSK    SOLD   
+  1   P042  Sunil Narine             All-Rounder        1.50      1.50 KKR    SOLD   
+  1   P061  Jake Fraser-McGurk       Batter             1.00      5.00 RCB    SOLD   
+  1   P098  Matheesha Pathirana      Bowler             1.00      4.50 RCB    SOLD   
+  1   P004  Shivam Dube              All-Rounder        1.00      2.50 CSK    SOLD   
+  1   P099  Kuldeep Yadav            Bowler             1.50      8.50 CSK    SOLD   
+  1   P007  Jos Buttler              Wicketkeeper       2.00      5.00 CSK    SOLD   
+  1   P047  Lockie Ferguson          Bowler             1.00      1.50 MI     SOLD   
+  1   P046  Pathum Nissanka          Batter             0.50      1.50 MI     SOLD   
+  1   P056  Varun Chakravarthy       Bowler             1.00      5.00 CSK    SOLD   
+  1   P038  KL Rahul                 Wicketkeeper       2.00      6.00 KKR    SOLD   
+  1   P022  Mayank Yadav             Bowler             0.50      2.50 KKR    SOLD   
+  1   P058  Ravindra Jadeja          All-Rounder        2.00      6.00 RCB    SOLD   
+  1   P090  Adam Zampa               Bowler             1.00      1.00 CSK    SOLD   
+  1   P009  Abhishek Sharma          Batter             1.00      5.50 CSK    SOLD   
+  1   P014  Aiden Markram            Batter             1.50      4.50 RCB    SOLD   
+  1   P092  Sam Curran               All-Rounder        1.50      8.00 KKR    SOLD   
+  1   P093  Marcus Stoinis           All-Rounder        1.00      3.50 RCB    SOLD   
+  1   P037  Sanju Samson             Wicketkeeper       1.50      4.50 KKR    SOLD   
+  1   P011  Phil Salt                Wicketkeeper       1.50      1.50 RCB    SOLD   
+  1   P005  Shubman Gill             Batter             2.00      2.00 MI     SOLD   
+  1   P054  Kagiso Rabada            Bowler             2.00      2.00 MI     SOLD   
+  1   P074  Rahmanullah Gurbaz       Wicketkeeper       0.50      0.50 RCB    SOLD   
+  1   P075  Rishabh Pant             Wicketkeeper       2.00      0.00 -      UNSOLD 
+  1   P077  Trent Boult              Bowler             1.50      1.50 MI     SOLD   
+  1   P078  Rajat Patidar            Batter             1.00      2.00 CSK    SOLD   
+  1   P096  Moeen Ali                All-Rounder        0.50      0.50 MI     SOLD   
+  1   P084  Brandon King             Batter             0.50      0.50 MI     SOLD   
+  1   P079  Mohammed Shami           Bowler             1.50      0.00 -      UNSOLD 
+  1   P018  Kusal Mendis             Wicketkeeper       0.50      0.00 -      UNSOLD 
+  1   P043  Mohammed Siraj           Bowler             1.50      1.50 RCB    SOLD   
+  1   P085  Lungi Ngidi              Bowler             0.50      0.50 RCB    SOLD   
+  1   P017  Harshit Rana             Bowler             0.50      0.00 -      UNSOLD 
+  1   P034  David Warner             Batter             1.50      1.50 RCB    SOLD   
+  1   P063  Jasprit Bumrah           Bowler             2.00      0.00 -      UNSOLD 
+  1   P059  Rovman Powell            Batter             0.50      0.50 KKR    SOLD   
+  1   P053  Will Jacks               All-Rounder        1.00      0.00 -      UNSOLD 
+  1   P068  Ravi Bishnoi             Bowler             1.00      0.00 -      UNSOLD 
+  1   P029  Anrich Nortje            Bowler             1.00      0.00 -      UNSOLD 
+  1   P051  MS Dhoni                 Wicketkeeper       1.50      1.50 MI     SOLD   
+  1   P044  Harry Brook              Batter             1.50      0.00 -      UNSOLD 
+  1   P094  Shimron Hetmyer          Batter             1.00      0.00 -      UNSOLD 
+  1   P006  Bhuvneshwar Kumar        Bowler             1.00      0.00 -      UNSOLD 
+  1   P057  Rachin Ravindra          All-Rounder        1.00      0.00 -      UNSOLD 
+  1   P040  Tilak Varma              Batter             1.00      1.00 KKR    SOLD   
+  1   P032  Marco Jansen             All-Rounder        1.00      0.00 -      UNSOLD 
+  1   P050  Ishan Kishan             Wicketkeeper       1.50      0.00 -      UNSOLD 
+  1   P024  Shreyas Iyer             Batter             1.50      1.50 MI     SOLD   
+

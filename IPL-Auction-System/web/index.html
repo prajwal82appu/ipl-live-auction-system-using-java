@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IPL Mega Player Auction 2026 | Live Simulation & Management System</title>
+  <meta name="description" content="Experience the ultimate IPL Player Auction Simulation with live AI bidding, Right-to-Match (RTM) cards, animated gavel hammer, authentic sound effects, and franchise management.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Confetti Celebration Canvas -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- Top Broadcast Header -->
+  <header class="top-header">
+    <div class="brand-wrapper">
+      <div class="ipl-logo-badge" id="ipl-badge-icon">IPL</div>
+      <div class="brand-titles">
+        <h1>
+          IPL PLAYER AUCTION 2026
+          <span class="live-tag"><span class="live-dot"></span> LIVE</span>
+        </h1>
+        <p>Dynamic AI Bidding • RTM Card System • Real-Time Broadcast Suite</p>
+      </div>
+    </div>
+
+    <!-- Header Settings & Franchise Selection -->
+    <div class="header-actions">
+      <!-- Mode Toggle -->
+      <div class="mode-selector" title="Switch Auction Format">
+        <button id="mode-4teams" class="mode-btn active" data-mode="4teams">4 Franchises (₹100 Cr)</button>
+        <button id="mode-10teams" class="mode-btn" data-mode="10teams">10 Teams Mega (₹120 Cr)</button>
+      </div>
+
+      <!-- Play as Team -->
+      <div class="user-team-picker" title="Control a Franchise manually">
+        <label for="user-team-select" style="font-size: 0.75rem; color: var(--text-dim); margin-right: 6px; font-weight: 600;">PLAY AS:</label>
+        <select id="user-team-select" class="filter-select" style="padding: 4px 10px; font-size: 0.78rem; border-radius: 9999px;">
+          <option value="NONE">Spectator (All AI)</option>
+          <option value="CSK">Chennai Super Kings</option>
+          <option value="RCB">Royal Challengers Bengaluru</option>
+          <option value="MI">Mumbai Indians</option>
+          <option value="KKR">Kolkata Knight Riders</option>
+        </select>
+      </div>
+
+      <!-- Final Results Button -->
+      <button id="btn-final-results" class="icon-btn" style="border-color: var(--accent-gold); color: var(--accent-gold);" title="View Official Team Rosters">
+        🏆 Final Squads
+      </button>
+
+      <!-- Sound Toggle -->
+      <button id="sound-toggle-btn" class="icon-btn active" title="Toggle Audio Effects">
+        🔊 Audio On
+      </button>
+
+      <!-- Export CSV -->
+      <button id="btn-export-csv" class="icon-btn" title="Download Full Results">
+        📥 Export CSV
+      </button>
+    </div>
+  </header>
+
+  <!-- Live Stat Ribbon -->
+  <section class="stats-ribbon" aria-label="Auction Overview Metrics">
+    <div class="ribbon-item">
+      <div class="ribbon-icon">👥</div>
+      <div class="ribbon-info">
+        <div class="ribbon-label">Total Pool</div>
+        <div class="ribbon-value" id="stat-total-players">100</div>
+      </div>
+    </div>
+    <div class="ribbon-item">
+      <div class="ribbon-icon" style="color: var(--accent-green);">✅</div>
+      <div class="ribbon-info">
+        <div class="ribbon-label">Players Sold</div>
+        <div class="ribbon-value" id="stat-sold-players" style="color: var(--accent-green);">0</div>
+      </div>
+    </div>
+    <div class="ribbon-item">
+      <div class="ribbon-icon" style="color: var(--accent-red);">❌</div>
+      <div class="ribbon-info">
+        <div class="ribbon-label">Unsold</div>
+        <div class="ribbon-value" id="stat-unsold-players" style="color: var(--accent-red);">0</div>
+      </div>
+    </div>
+    <div class="ribbon-item">
+      <div class="ribbon-icon" style="color: var(--accent-cyan);">⏳</div>
+      <div class="ribbon-info">
+        <div class="ribbon-label">In Queue</div>
+        <div class="ribbon-value" id="stat-remaining-players">100</div>
+      </div>
+    </div>
+    <div class="ribbon-item">
+      <div class="ribbon-icon" style="color: var(--accent-gold);">💰</div>
+      <div class="ribbon-info">
+        <div class="ribbon-label">Total Spend</div>
+        <div class="ribbon-value" id="stat-total-spent">₹0.00 Cr</div>
+      </div>
+    </div>
+    <div class="ribbon-item">
+      <div class="ribbon-icon" style="color: var(--accent-purple);">📊</div>
+      <div class="ribbon-info">
+        <div class="ribbon-label">Avg Sold Price</div>
+        <div class="ribbon-value" id="stat-avg-price">₹0.00 Cr</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Navigation Tab Strip -->
+  <nav class="nav-tab-strip" aria-label="Navigation Tabs">
+    <button class="tab-btn active" data-tab="tab-arena" id="tab-btn-arena">🏟️ Live Arena</button>
+    <button class="tab-btn" data-tab="tab-rosters" id="tab-btn-rosters">📋 Franchise Rosters</button>
+    <button class="tab-btn" data-tab="tab-analytics" id="tab-btn-analytics">⚡ Team Power & Radar</button>
+    <button class="tab-btn" data-tab="tab-catalog" id="tab-btn-catalog">🔍 Player Pool (100)</button>
+    <button class="tab-btn" data-tab="tab-records" id="tab-btn-records">🏆 Leaderboard & History</button>
+  </nav>
+
+  <!-- Main Container -->
+  <main class="app-container">
+
+    <!-- ====================================================================
+         TAB 1: LIVE ARENA (THE AUCTION STAGE)
+         ==================================================================== -->
+    <section id="tab-arena" class="tab-content active" aria-labelledby="tab-btn-arena">
+      <div class="live-arena-grid">
+
+        <!-- LEFT COLUMN: FRANCHISE PADDLES -->
+        <aside class="franchise-paddles-col" aria-label="Franchise Bidding Controls">
+          <div class="glass-card" style="padding: 16px;">
+            <div class="card-header-row">
+              <h2 class="card-title">🏏 Franchises</h2>
+              <span style="font-size: 0.72rem; color: var(--text-dim);">Live Purses</span>
+            </div>
+            <div id="franchise-paddles-container" class="franchise-paddles-list">
+              <!-- Dynamically populated paddles -->
+            </div>
+          </div>
+        </aside>
+
+        <!-- CENTER COLUMN: THE MAIN STAGE -->
+        <div class="centerstage-wrapper">
+
+          <!-- SPOTLIGHT PLAYER CARD -->
+          <article id="player-spotlight-container" class="player-spotlight-card" aria-label="Player Currently on Block">
+            <!-- Dynamically populated active player info -->
+          </article>
+
+          <!-- LIVE BIDDING ARENA / HAMMER / TIMER -->
+          <div class="bidding-arena-card">
+            <div class="arena-top-status">
+              
+              <!-- Countdown Circle & Callout -->
+              <div class="timer-dial-container">
+                <div class="countdown-svg-wrapper">
+                  <svg width="64" height="64">
+                    <circle class="circle-bg" cx="32" cy="32" r="26"></circle>
+                    <circle id="timer-progress-ring" class="circle-progress" cx="32" cy="32" r="26"></circle>
+                  </svg>
+                  <div id="timer-seconds-num" class="countdown-number">8</div>
+                </div>
+                <div class="timer-callout">
+                  <div id="timer-callout-text" class="phase-text">Waiting for Player...</div>
+                  <div class="sub-callout">Timer resets on each bid</div>
+                </div>
+              </div>
+
+              <!-- Animated Gavel Icon -->
+              <div class="gavel-visual-box">
+                <span id="gavel-anim-wrap" class="gavel-icon-wrap" title="Auctioneer Gavel">🔨</span>
+                <div class="current-bid-spotlight">
+                  <div class="bid-label">Current Highest Bid</div>
+                  <div id="live-bid-amount" class="bid-val">₹0.00 Cr</div>
+                  <div id="live-bid-leader" class="leader-badge">No bids yet</div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Action Controls -->
+            <div class="auction-action-bar">
+              <!-- Quick Increments -->
+              <div class="increments-row">
+                <button class="inc-btn" data-inc="0.25" disabled>+₹0.25 Cr</button>
+                <button class="inc-btn" data-inc="0.50" disabled>+₹0.50 Cr</button>
+                <button class="inc-btn" data-inc="1.00" disabled>+₹1.00 Cr</button>
+                <button class="inc-btn" data-inc="2.00" disabled>+₹2.00 Cr</button>
+              </div>
+
+              <!-- Primary Action Buttons -->
+              <div class="main-controls-row">
+                <button id="btn-next-player" class="btn-primary-action">
+                  <span>▶</span> Next Player
+                </button>
+                <button id="btn-sell-player" class="btn-sell-action" disabled>
+                  <span>🔨</span> Sold!
+                </button>
+                <button id="btn-skip-player" class="btn-skip-action" disabled>
+                  <span>✕</span> Unsold
+                </button>
+              </div>
+
+              <!-- Simulation & Speed Controls -->
+              <div class="sim-controls-panel">
+                <div class="sim-group">
+                  <button id="btn-auto-auction" class="icon-btn" style="border-radius: var(--radius-sm);">
+                    ⚡ Auto Auction
+                  </button>
+                </div>
+                <div class="sim-group">
+                  <span style="font-size: 0.75rem; color: var(--text-dim); font-weight: 600;">SIM SPEED:</span>
+                  <div class="speed-selector">
+                    <button class="speed-btn active" data-speed="1">1x</button>
+                    <button class="speed-btn" data-speed="2">2x</button>
+                    <button class="speed-btn" data-speed="5">5x</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT COLUMN: UPCOMING QUEUE + FEED -->
+        <aside class="queue-and-feed-col" aria-label="Auction Queue and Live Feed">
+          <!-- Upcoming Players -->
+          <div class="glass-card" style="padding: 16px;">
+            <div class="card-header-row">
+              <h2 class="card-title">⏳ Upcoming Queue</h2>
+              <span style="font-size: 0.72rem; color: var(--text-dim);">Next on Block</span>
+            </div>
+            <div id="upcoming-queue-container" class="upcoming-players-list">
+              <!-- Dynamically populated queue items -->
+            </div>
+          </div>
+
+          <!-- Live Event Feed -->
+          <div class="glass-card" style="padding: 16px;">
+            <div class="card-header-row">
+              <h2 class="card-title">🎙️ Auctioneer Feed</h2>
+              <span style="font-size: 0.72rem; color: var(--accent-cyan);">Live Ticker</span>
+            </div>
+            <div id="live-auction-feed" class="auction-feed-box" aria-live="polite">
+              <div class="feed-item">Welcome to the IPL 2026 Mega Player Auction! Click 'Next Player' to start.</div>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         TAB 2: FRANCHISE ROSTERS & SQUADS
+         ==================================================================== -->
+    <section id="tab-rosters" class="tab-content" aria-labelledby="tab-btn-rosters">
+      <div class="card-header-row" style="margin-bottom: 20px;">
+        <h2 style="font-family: var(--font-heading); font-size: 1.4rem;">🏏 Franchise Squad Rosters</h2>
+        <p style="color: var(--text-muted); font-size: 0.85rem;">Track squads, purse allocation, and role composition</p>
+      </div>
+      <div id="rosters-container" class="rosters-grid">
+        <!-- Dynamically populated rosters -->
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         TAB 3: TEAM STRENGTH RADAR & ANALYTICS
+         ==================================================================== -->
+    <section id="tab-analytics" class="tab-content" aria-labelledby="tab-btn-analytics">
+      <div class="card-header-row" style="margin-bottom: 20px;">
+        <h2 style="font-family: var(--font-heading); font-size: 1.4rem;">⚡ Team Power Index & Radar</h2>
+        <p style="color: var(--text-muted); font-size: 0.85rem;">Live AI evaluation of batting firepower, bowling depth, and squad balance</p>
+      </div>
+      <div id="ratings-container" class="analytics-grid">
+        <!-- Dynamically populated power rating cards -->
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         TAB 4: ALL 100 PLAYERS DIRECTORY & SEARCH
+         ==================================================================== -->
+    <section id="tab-catalog" class="tab-content" aria-labelledby="tab-btn-catalog">
+      <div class="catalog-controls-bar">
+        <div class="search-input-wrap">
+          <span class="search-icon-pos">🔍</span>
+          <input type="text" id="catalog-search-input" placeholder="Search player by name or country...">
+        </div>
+        <select id="catalog-role-filter" class="filter-select">
+          <option value="ALL">All Roles</option>
+          <option value="BATTER">Batters</option>
+          <option value="BOWLER">Bowlers</option>
+          <option value="ALL_ROUNDER">All-Rounders</option>
+          <option value="WICKETKEEPER">Wicketkeepers</option>
+        </select>
+        <select id="catalog-status-filter" class="filter-select">
+          <option value="AVAILABLE" selected>🎯 Available for Auction (Waiting)</option>
+          <option value="SOLD">✅ Sold to Franchises</option>
+          <option value="UNSOLD">❌ Unsold Pool</option>
+          <option value="ALL">📋 All 100 Players</option>
+        </select>
+      </div>
+
+      <div class="players-table-container">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Player Name</th>
+              <th>Role</th>
+              <th>Age</th>
+              <th>Career Stats (Runs, SR, 6s, 4s / Wickets, Econ, Speed / Stumpings)</th>
+              <th>Base Price</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="catalog-table-body">
+            <!-- Dynamically populated catalog rows -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         TAB 5: LEADERBOARD & AUCTION RECORDS
+         ==================================================================== -->
+    <section id="tab-records" class="tab-content" aria-labelledby="tab-btn-records">
+      <div class="history-layout-grid">
+        <!-- Top Most Expensive Buys -->
+        <div class="glass-card">
+          <div class="card-header-row">
+            <h2 class="card-title">💎 Most Expensive Buys</h2>
+            <span style="font-size: 0.75rem; color: var(--accent-gold);">Top Marquee Signings</span>
+          </div>
+          <div id="top-buys-list" class="leaderboard-list">
+            <!-- Populated via JS -->
+          </div>
+        </div>
+
+        <!-- Best Value Steals -->
+        <div class="glass-card">
+          <div class="card-header-row">
+            <h2 class="card-title">🎯 Value Bargain Steals</h2>
+            <span style="font-size: 0.75rem; color: var(--accent-green);">Smart Moneyball Buys</span>
+          </div>
+          <div id="top-steals-list" class="leaderboard-list">
+            <!-- Populated via JS -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Unsold Pool & Accelerated Round -->
+      <div class="glass-card" style="margin-top: 22px;">
+        <div class="card-header-row">
+          <div>
+            <h2 class="card-title">⚠️ Unsold Players Pool</h2>
+            <p style="font-size: 0.78rem; color: var(--text-dim); margin-top: 2px;">Players passed in regular rounds can be re-auctioned</p>
+          </div>
+          <button id="btn-reauction-unsold" class="icon-btn" style="border-color: var(--accent-purple); color: var(--accent-purple);">
+            🔄 Activate Accelerated Round
+          </button>
+        </div>
+        <div id="unsold-pool-list" class="leaderboard-list" style="margin-top: 14px;">
+          <!-- Populated via JS -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Right to Match (RTM) Modal Dialog -->
+  <div id="rtm-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="rtm-modal-title">
+    <div class="modal-box">
+      <div class="rtm-headline" id="rtm-modal-title">
+        <span>⚡</span> RIGHT TO MATCH (RTM)
+      </div>
+      <p id="rtm-modal-desc" style="font-size: 1.05rem; line-height: 1.6; margin-top: 10px; color: var(--text-main);">
+        Do you want to exercise your Right-to-Match card to retain this player?
+      </p>
+      <div class="rtm-modal-actions">
+        <button id="btn-rtm-match" class="btn-rtm-match">
+          ✓ Exercise RTM & Match Bid
+        </button>
+        <button id="btn-rtm-pass" class="btn-rtm-pass">
+          ✕ Pass / Decline
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Final Results & Official Team Rosters Modal (After Auction) -->
+  <div id="final-results-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="final-modal-title">
+    <div class="final-results-modal-box">
+      <div class="final-results-header">
+        <h2 id="final-modal-title">🏆 OFFICIAL IPL 2026 TEAM SQUADS & ROSTERS</h2>
+        <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 6px;">
+          All players officially acquired and assigned to their respective franchise teams
+        </p>
+        <button id="btn-close-final-modal" class="icon-btn" style="position: absolute; right: 0; top: 0;">✕ Close</button>
+      </div>
+
+      <div id="final-teams-rosters-content" class="final-teams-grid">
+        <!-- Dynamically populated teams & players -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="audio.js"></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

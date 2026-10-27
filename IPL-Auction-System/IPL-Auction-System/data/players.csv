@@ -1,0 +1,101 @@
+PlayerID,Name,Age,Country,Role,BasePrice,CurrentBid,Sold,FinalPrice,SoldTo
+P001,Arshdeep Singh,27,India,BOWLER,1.50,0.00,false,0.00,-
+P002,Ruturaj Gaikwad,29,India,BATTER,1.50,0.00,false,0.00,-
+P003,Mitchell Marsh,34,Australia,ALL_ROUNDER,1.50,0.00,false,0.00,-
+P004,Shivam Dube,32,India,ALL_ROUNDER,1.00,0.00,false,0.00,-
+P005,Shubman Gill,26,India,BATTER,2.00,0.00,false,0.00,-
+P006,Bhuvneshwar Kumar,36,India,BOWLER,1.00,0.00,false,0.00,-
+P007,Jos Buttler,36,England,WICKETKEEPER,2.00,0.00,false,0.00,-
+P008,Rassie van der Dussen,36,South Africa,BATTER,1.00,0.00,false,0.00,-
+P009,Abhishek Sharma,25,India,BATTER,1.00,0.00,false,0.00,-
+P010,Fazalhaq Farooqi,25,Afghanistan,BOWLER,0.50,0.00,false,0.00,-
+P011,Phil Salt,30,England,WICKETKEEPER,1.50,0.00,false,0.00,-
+P012,Liam Livingstone,32,England,ALL_ROUNDER,1.00,0.00,false,0.00,-
+P013,Dewald Brevis,22,South Africa,BATTER,0.50,0.00,false,0.00,-
+P014,Aiden Markram,31,South Africa,BATTER,1.50,0.00,false,0.00,-
+P015,Dhruv Jurel,25,India,WICKETKEEPER,0.50,0.00,false,0.00,-
+P016,Steve Smith,37,Australia,BATTER,1.50,0.00,false,0.00,-
+P017,Harshit Rana,24,India,BOWLER,0.50,0.00,false,0.00,-
+P018,Kusal Mendis,31,Sri Lanka,WICKETKEEPER,0.50,0.00,false,0.00,-
+P019,Quinton de Kock,33,South Africa,WICKETKEEPER,1.50,0.00,false,0.00,-
+P020,Mitchell Starc,36,Australia,BOWLER,2.00,0.00,false,0.00,-
+P021,Suryakumar Yadav,36,India,BATTER,2.00,0.00,false,0.00,-
+P022,Mayank Yadav,23,India,BOWLER,0.50,0.00,false,0.00,-
+P023,Jitesh Sharma,32,India,WICKETKEEPER,0.50,0.00,false,0.00,-
+P024,Shreyas Iyer,31,India,BATTER,1.50,0.00,false,0.00,-
+P025,Dawid Malan,38,England,BATTER,0.50,0.00,false,0.00,-
+P026,Yuzvendra Chahal,36,India,BOWLER,1.00,0.00,false,0.00,-
+P027,Jofra Archer,31,England,BOWLER,1.50,0.00,false,0.00,-
+P028,Heinrich Klaasen,35,South Africa,WICKETKEEPER,1.50,0.00,false,0.00,-
+P029,Anrich Nortje,32,South Africa,BOWLER,1.00,0.00,false,0.00,-
+P030,Josh Hazlewood,35,Australia,BOWLER,1.50,0.00,false,0.00,-
+P031,Rashid Khan,27,Afghanistan,BOWLER,2.00,0.00,false,0.00,-
+P032,Marco Jansen,25,South Africa,ALL_ROUNDER,1.00,0.00,false,0.00,-
+P033,Krunal Pandya,32,India,ALL_ROUNDER,0.50,0.00,false,0.00,-
+P034,David Warner,39,Australia,BATTER,1.50,0.00,false,0.00,-
+P035,Nehal Wadhera,25,India,BATTER,0.50,0.00,false,0.00,-
+P036,Devon Conway,34,New Zealand,WICKETKEEPER,1.00,0.00,false,0.00,-
+P037,Sanju Samson,31,India,WICKETKEEPER,1.50,0.00,false,0.00,-
+P038,KL Rahul,34,India,WICKETKEEPER,2.00,0.00,false,0.00,-
+P039,Prasidh Krishna,29,India,BOWLER,1.00,0.00,false,0.00,-
+P040,Tilak Varma,23,India,BATTER,1.00,0.00,false,0.00,-
+P041,Tim David,30,Australia,BATTER,1.00,0.00,false,0.00,-
+P042,Sunil Narine,38,West Indies,ALL_ROUNDER,1.50,0.00,false,0.00,-
+P043,Mohammed Siraj,32,India,BOWLER,1.50,0.00,false,0.00,-
+P044,Harry Brook,27,England,BATTER,1.50,0.00,false,0.00,-
+P045,Yashasvi Jaiswal,24,India,BATTER,2.00,0.00,false,0.00,-
+P046,Pathum Nissanka,28,Sri Lanka,BATTER,0.50,0.00,false,0.00,-
+P047,Lockie Ferguson,35,New Zealand,BOWLER,1.00,0.00,false,0.00,-
+P048,Axar Patel,32,India,ALL_ROUNDER,1.50,0.00,false,0.00,-
+P049,Joe Root,35,England,BATTER,1.50,0.00,false,0.00,-
+P050,Ishan Kishan,27,India,WICKETKEEPER,1.50,0.00,false,0.00,-
+P051,MS Dhoni,45,India,WICKETKEEPER,1.50,0.00,false,0.00,-
+P052,Faf du Plessis,41,South Africa,BATTER,1.00,0.00,false,0.00,-
+P053,Will Jacks,27,England,ALL_ROUNDER,1.00,0.00,false,0.00,-
+P054,Kagiso Rabada,31,South Africa,BOWLER,2.00,0.00,false,0.00,-
+P055,Washington Sundar,26,India,ALL_ROUNDER,1.00,0.00,false,0.00,-
+P056,Varun Chakravarthy,35,India,BOWLER,1.00,0.00,false,0.00,-
+P057,Rachin Ravindra,26,New Zealand,ALL_ROUNDER,1.00,0.00,false,0.00,-
+P058,Ravindra Jadeja,37,India,ALL_ROUNDER,2.00,0.00,false,0.00,-
+P059,Rovman Powell,32,West Indies,BATTER,0.50,0.00,false,0.00,-
+P060,Mark Wood,36,England,BOWLER,0.50,0.00,false,0.00,-
+P061,Jake Fraser-McGurk,24,Australia,BATTER,1.00,0.00,false,0.00,-
+P062,Sameer Rizvi,22,India,BATTER,0.50,0.00,false,0.00,-
+P063,Jasprit Bumrah,32,India,BOWLER,2.00,0.00,false,0.00,-
+P064,Devdutt Padikkal,26,India,BATTER,0.50,0.00,false,0.00,-
+P065,T Natarajan,35,India,BOWLER,0.50,0.00,false,0.00,-
+P066,Rinku Singh,28,India,BATTER,1.00,0.00,false,0.00,-
+P067,Nicholas Pooran,30,West Indies,WICKETKEEPER,1.50,0.00,false,0.00,-
+P068,Ravi Bishnoi,25,India,BOWLER,1.00,0.00,false,0.00,-
+P069,Avesh Khan,29,India,BOWLER,1.00,0.00,false,0.00,-
+P070,Harshal Patel,35,India,BOWLER,1.00,0.00,false,0.00,-
+P071,Ayush Badoni,26,India,BATTER,0.50,0.00,false,0.00,-
+P072,Pat Cummins,33,Australia,BOWLER,2.00,0.00,false,0.00,-
+P073,Kane Williamson,35,New Zealand,BATTER,1.50,0.00,false,0.00,-
+P074,Rahmanullah Gurbaz,24,Afghanistan,WICKETKEEPER,0.50,0.00,false,0.00,-
+P075,Rishabh Pant,28,India,WICKETKEEPER,2.00,0.00,false,0.00,-
+P076,Rohit Sharma,39,India,BATTER,2.00,0.00,false,0.00,-
+P077,Trent Boult,37,New Zealand,BOWLER,1.50,0.00,false,0.00,-
+P078,Rajat Patidar,33,India,BATTER,1.00,0.00,false,0.00,-
+P079,Mohammed Shami,35,India,BOWLER,1.50,0.00,false,0.00,-
+P080,Ajinkya Rahane,38,India,BATTER,0.50,0.00,false,0.00,-
+P081,Sai Sudharsan,25,India,BATTER,1.00,0.00,false,0.00,-
+P082,Cameron Green,27,Australia,ALL_ROUNDER,1.50,0.00,false,0.00,-
+P083,Virat Kohli,37,India,BATTER,2.00,0.00,false,0.00,-
+P084,Brandon King,31,West Indies,BATTER,0.50,0.00,false,0.00,-
+P085,Lungi Ngidi,30,South Africa,BOWLER,0.50,0.00,false,0.00,-
+P086,Glenn Maxwell,37,Australia,ALL_ROUNDER,1.50,0.00,false,0.00,-
+P087,Noor Ahmad,21,Afghanistan,BOWLER,0.50,0.00,false,0.00,-
+P088,Nitish Kumar Reddy,23,India,ALL_ROUNDER,0.50,0.00,false,0.00,-
+P089,Andre Russell,38,West Indies,ALL_ROUNDER,1.50,0.00,false,0.00,-
+P090,Adam Zampa,34,Australia,BOWLER,1.00,0.00,false,0.00,-
+P091,Venkatesh Iyer,31,India,ALL_ROUNDER,1.00,0.00,false,0.00,-
+P092,Sam Curran,27,England,ALL_ROUNDER,1.50,0.00,false,0.00,-
+P093,Marcus Stoinis,36,Australia,ALL_ROUNDER,1.00,0.00,false,0.00,-
+P094,Shimron Hetmyer,29,West Indies,BATTER,1.00,0.00,false,0.00,-
+P095,Prithvi Shaw,26,India,BATTER,0.50,0.00,false,0.00,-
+P096,Moeen Ali,39,England,ALL_ROUNDER,0.50,0.00,false,0.00,-
+P097,Hardik Pandya,32,India,ALL_ROUNDER,2.00,0.00,false,0.00,-
+P098,Matheesha Pathirana,23,Sri Lanka,BOWLER,1.00,0.00,false,0.00,-
+P099,Kuldeep Yadav,31,India,BOWLER,1.50,0.00,false,0.00,-
+P100,Travis Head,32,Australia,BATTER,2.00,0.00,false,0.00,-
